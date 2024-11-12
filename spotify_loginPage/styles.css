@@ -1,0 +1,195 @@
+/* CSS Variables */
+:root {
+    --background-color: #121212;
+    --container-background: rgba(0, 0, 0, 0.8);
+    --spotify-green: #1db954;
+    --lighter-green: #24e079;
+    --text-color: #ffffff;
+    --text-grey: #b3b3b3;
+    --input-bg: #333;
+    --button-bg: #333;
+    --bg-secondary: #1f1e1e;
+    --input-placeholder: #b3b3b3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), var(--background-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color); 
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 3.5rem;
+    width: 680px;
+}
+
+.login-box {
+    width: 100%;
+    background: linear-gradient(to bottom, var(--background-color), var(--bg-secondary));
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-header h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.spotify-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.social-login-btn {
+    width: 50%;
+    padding: 10px;
+    margin: 5px auto;
+    border: 1px solid var(--text-grey);
+    border-radius: 20px;
+    color: var(--text-color);
+    background: none;
+    font-size: .75rem;
+    font-weight: bolder;
+    position: relative;
+    text-align: center;
+}
+
+.social-login-btn:hover {
+    border: 1px solid var(--text-color);
+}
+
+.social-login-btn i {
+    margin-right: 8px;
+}
+
+.social-login-btn .icon, .social-login-btn i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+.divider {
+    border-bottom: 1px solid var(--button-bg);
+    margin: 2rem auto;
+    width: 75%;
+}
+
+.login-form {
+    text-align: left;
+    width: 50%;
+    margin: auto;
+}
+
+.login-form label {
+    font-size: .8rem;
+    color: var(--text-color);
+    margin-top: 10px;
+    display: block;
+}
+
+.input-container {
+    position: relative;
+    margin-top: 8px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 1px solid var(--text-grey);
+    border-radius: 4px;
+    color: var(--text-color);
+}
+
+.input-container input::placeholder {
+    color: var(--input-placeholder);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-grey);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--spotify-green);
+    color: var(--background-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: .75rem;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+    background-color: var(--lighter-green);
+}
+
+.forgot-password, .signup-text a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: .8rem;
+    text-decoration: underline;
+}
+
+.forgot-password:hover, .signup-text a:hover {
+    color: var(--spotify-green);
+}
+
+.forgot-password {
+    display: block;
+    margin: 1rem 0;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: .8rem;
+    text-align: center;
+    color: var(--text-grey);
+}
+
+.footer-text {
+    font-size: 12px;
+    color: var(--text-grey);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-text a {
+    color: #0071eb;
+    text-decoration: none;
+}
