@@ -10,60 +10,62 @@
     --button-bg: #333;
     --bg-secondary: #1f1e1e;
     --input-placeholder: #b3b3b3;
-}
-
-* {
+  }
+  
+  /* General Styles */
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
+  }
+  
+  body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), var(--background-color));
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: var(--text-color); 
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
-}
-
-.container {
+  }
+  
+  /* Container and Login Box */
+  .container {
     padding: 3.5rem;
-    width: 680px;
-}
-
-.login-box {
+    width: 650px;
+  }
+  
+  .login-box {
     width: 100%;
-    background: linear-gradient(to bottom, var(--background-color), var(--bg-secondary));
+    background: linear-gradient(to bottom, var(--background-color) , var(--bg-secondary));
     padding: 30px;
     border-radius: 8px;
     text-align: center;
-}
-
-.login-header {
+  }
+  
+  .login-header {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.login-header h2 {
+  }
+  
+  .login-header h2 {
     margin-top: 10px;
     font-size: 20px;
-}
+  }
 
-.icon {
+  .icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
     vertical-align: middle;
-}
-
-.spotify-logo {
+  }
+  .spotify-logo {
     width: 32px;
     height: 32px;
-}
-
-.social-login-btn {
+  }
+  
+  /* Social Login Buttons */
+  .social-login-btn {
     width: 50%;
     padding: 10px;
     margin: 5px auto;
@@ -73,73 +75,76 @@ body {
     background: none;
     font-size: .75rem;
     font-weight: bolder;
-    position: relative;
-    text-align: center;
-}
+    position: relative; /* Relative positioning to allow absolute positioning for the icon */
+    text-align: center; /* Center the button text */
+  }
 
-.social-login-btn:hover {
+  .social-login-btn:hover {
     border: 1px solid var(--text-color);
-}
-
-.social-login-btn i {
+  }
+  
+  .social-login-btn i {
     margin-right: 8px;
-}
+  }
 
-.social-login-btn .icon, .social-login-btn i {
+  .social-login-btn .icon, .social-login-btn i {
     position: absolute;
-    left: 15px;
+    left: 15px; /* Position icon at the left edge of the button */
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* Center icon vertically */
     width: 20px;
-}
-
-.divider {
+  }
+  
+  /* Divider */
+  .divider {
     border-bottom: 1px solid var(--button-bg);
     margin: 2rem auto;
     width: 75%;
-}
-
-.login-form {
+  }
+  
+  /* Login Form */
+  .login-form {
     text-align: left;
     width: 50%;
     margin: auto;
-}
-
-.login-form label {
+  }
+  
+  .login-form label {
     font-size: .8rem;
     color: var(--text-color);
     margin-top: 10px;
     display: block;
-}
-
-.input-container {
+  }
+  
+  .input-container {
     position: relative;
     margin-top: 8px;
-}
-
-.input-container input {
+  }
+  
+  .input-container input {
     width: 100%;
     padding: 10px;
     background: none;
     border: 1px solid var(--text-grey);
     border-radius: 4px;
     color: var(--text-color);
-}
-
-.input-container input::placeholder {
+  }
+  
+  .input-container input::placeholder {
     color: var(--input-placeholder);
-}
-
-.toggle-password {
+  }
+  
+  .toggle-password {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     color: var(--text-grey);
-}
-
-.login-btn {
+  }
+  
+  /* Login Button */
+  .login-btn {
     width: 100%;
     padding: 10px;
     background-color: var(--spotify-green);
@@ -150,46 +155,47 @@ body {
     font-size: .75rem;
     font-weight: bolder;
     margin: 1rem 0;
-}
+  }
 
-.login-btn:hover {
+  .login-btn:hover {
     transform: scale(1.05);
     background-color: var(--lighter-green);
-}
-
-.forgot-password, .signup-text a {
+  }
+  
+  /* Links */
+  .forgot-password, .signup-text a {
     color: var(--text-color);
     text-decoration: none;
     font-size: .8rem;
     text-decoration: underline;
-}
-
-.forgot-password:hover, .signup-text a:hover {
+  }
+  
+  .forgot-password:hover, .signup-text a:hover {
     color: var(--spotify-green);
-}
+  }
 
-.forgot-password {
+  .forgot-password {
     display: block;
     margin: 1rem 0;
     color: var(--text-color);
     text-align: center;
-}
-
-.signup-text {
+  }
+  
+  .signup-text {
     margin-top: 15px;
     font-size: .8rem;
     text-align: center;
     color: var(--text-grey);
-}
-
-.footer-text {
+  }
+  
+  .footer-text {
     font-size: 12px;
     color: var(--text-grey);
     text-align: center;
     margin-top: 20px;
-}
-
-.footer-text a {
+  }
+  
+  .footer-text a {
     color: #0071eb;
     text-decoration: none;
-}
+  }
